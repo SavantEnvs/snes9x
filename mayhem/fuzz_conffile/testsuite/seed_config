@@ -1,0 +1,8 @@
+[Display]
+Fullscreen = TRUE
+
+[Sound]
+BufferSize = 80
+
+[Settings]
+Language = Klingon

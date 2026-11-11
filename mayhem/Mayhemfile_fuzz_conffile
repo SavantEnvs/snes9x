@@ -1,0 +1,9 @@
+project: savantenvs/snes9x
+target: fuzz_conffile
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_conffile/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_conffile
+    libfuzzer: true
+    timeout: 10

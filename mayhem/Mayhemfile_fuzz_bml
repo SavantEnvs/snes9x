@@ -1,0 +1,9 @@
+project: savantenvs/snes9x
+target: fuzz_bml
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_bml/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_bml
+    libfuzzer: true
+    timeout: 10
